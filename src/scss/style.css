@@ -1,0 +1,1116 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#social .models img, #slide .box-img-down img, #slide .box-img img, #slide .carousel-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header {
+  padding: 20px 30px 20px 30px;
+  font-family: "Red Hat Display", sans-serif;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .menu ul {
+  display: flex;
+  gap: 20px;
+}
+header nav .menu ul li {
+  font-size: 16px;
+  text-transform: none;
+  color: #1a1a1a;
+  font-weight: 500;
+  line-height: 34px;
+  transition: 0.2s ease-in-out;
+}
+header nav .menu ul li:hover {
+  color: rgb(140, 205, 41);
+  cursor: pointer;
+}
+header nav .menu ul li i {
+  font-size: 15px;
+}
+header nav .menu ul .dropdown {
+  position: relative;
+}
+header nav .menu .tabmenu {
+  padding: 30px 20px;
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 74px;
+  right: 0px;
+  opacity: 0;
+  z-index: 1;
+  gap: 50px;
+}
+header nav .menu .tabmenu .first {
+  font-weight: bold;
+  font-size: 16px;
+}
+header nav .menu .tabmenu li {
+  font-size: 14px;
+}
+header nav .menu .tabmenu .start ul {
+  display: flex;
+  flex-direction: column;
+}
+header nav .menu .tabmenu .mid ul {
+  display: flex;
+  flex-direction: column;
+}
+header nav .menu .tabmenu .product-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+header nav .menu .tabmenu .product-box .box {
+  display: flex;
+  gap: 10px;
+}
+header nav .menu .tabmenu .product-box .box .box-img {
+  width: 100px;
+  height: 100px;
+}
+header nav .menu .tabmenu .product-box .box .box-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header nav .menu .tabmenu .product-box .box .box-body {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+header nav .register {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header nav .register .left ul {
+  display: flex;
+  align-items: center;
+}
+header nav .register .left ul li {
+  font-size: 16px;
+  text-transform: none;
+  color: #1a1a1a;
+  font-weight: 500;
+  line-height: 34px;
+  transition: 0.2s ease-in-out;
+}
+header nav .register .left ul li:hover {
+  color: rgb(140, 205, 41);
+  cursor: pointer;
+}
+header nav .register .left ul li:hover i {
+  color: rgb(140, 205, 41);
+  cursor: pointer;
+}
+header nav .register .left ul li i {
+  font-size: 18px;
+  color: #1a1a1a;
+}
+header nav .register .icons ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header nav .register .icons ul li i {
+  font-size: 18px;
+  color: #1a1a1a;
+  transition: 0.2s ease-in-out;
+}
+header nav .register .icons ul li i:hover {
+  color: rgb(140, 205, 41);
+  cursor: pointer;
+}
+
+#slide {
+  padding: 0px 30px 0px 30px;
+  font-family: "Red Hat Display", sans-serif;
+}
+#slide .carousel-item {
+  height: 830px;
+  position: relative;
+}
+#slide .carousel-item .position-el {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+}
+#slide .carousel-item .position-el p {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 15px;
+}
+#slide .carousel-item .position-el p span {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ba933e;
+}
+#slide .carousel-item .position-el h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #1a1a1a;
+  max-width: 590px;
+  margin-bottom: 30px;
+}
+#slide .carousel-item .position-el button {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: none;
+  background-color: #1a1a1a;
+  padding: 11px 30px;
+  transition: 0.2s ease-in-out;
+  border: none;
+  border-radius: 6px;
+}
+#slide .carousel-item .position-el button:hover {
+  background-color: #ba933e;
+}
+#slide .box-img {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  position: relative;
+}
+#slide .box-img .position-right {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  top: 20px;
+  left: 20px;
+}
+#slide .box-img .position-right p {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  color: #1a1a1a;
+}
+#slide .box-img .position-right h3 {
+  font-size: 16px;
+  line-height: 28px;
+}
+#slide .box-img .position-right h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ba933e;
+  text-decoration: underline;
+}
+#slide .box-img-down {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+#slide .box-img-down .position-right {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  top: 20px;
+  left: 20px;
+}
+#slide .box-img-down .position-right p {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  color: #1a1a1a;
+}
+#slide .box-img-down .position-right h3 {
+  font-size: 16px;
+  line-height: 28px;
+}
+#slide .box-img-down .position-right h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ba933e;
+  text-decoration: underline;
+}
+
+#products {
+  font-family: "Red Hat Display", sans-serif;
+  padding: 0px 30px 0px 30px;
+  margin: 50px 0;
+}
+#products .product-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#products .product-head h1 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #1a1a1a;
+  padding: 8px 0;
+}
+#products .product-head p {
+  font-size: 16px;
+  line-height: 28px;
+}
+#products .cards {
+  margin-top: 30px;
+}
+#products .cards .cards-img {
+  position: relative;
+  overflow: hidden;
+}
+#products .cards .cards-img:hover .position-btns {
+  opacity: 1;
+  transform: translateY(0);
+}
+#products .cards .cards-img:hover .more-section {
+  opacity: 1;
+}
+#products .cards .cards-img img {
+  width: 100%;
+  height: 100%;
+}
+#products .cards .cards-img .position-element {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#products .cards .cards-img .position-element button {
+  padding: 5px 8px;
+  background-color: #ba933e;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+}
+#products .cards .cards-img .position-btns {
+  position: absolute;
+  bottom: 20px;
+  left: 36px;
+  display: flex;
+  gap: 10px;
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+  transform: translateY(40px);
+}
+#products .cards .cards-img .position-btns button {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: none;
+  background-color: #1a1a1a;
+  padding: 8px 12px;
+  border-radius: 5px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+#products .cards .cards-img .position-btns button:hover {
+  background-color: #ba933e;
+}
+#products .cards .cards-img .more-section {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  overflow: hidden;
+}
+#products .cards .cards-img .more-section i {
+  font-size: 18px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+}
+#products .cards .cards-img .more-section i:hover {
+  background-color: #ba933e;
+  color: white;
+  cursor: pointer;
+}
+#products .cards .card-body {
+  width: 128px;
+}
+#products .cards .card-body p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  transition: 0.2s ease-in-out;
+}
+#products .cards .card-body p:hover {
+  color: #ba933e;
+  cursor: pointer;
+}
+#products .cards .card-body .left {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: rgba(68, 68, 68, 0.537254902);
+  text-decoration: line-through;
+}
+#products .cards .card-body span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ba933e;
+}
+#products .lefts {
+  margin: 50px 0;
+  padding: 100px 40px 100px 40px;
+  height: 80%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#products .lefts p {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 15px;
+}
+#products .lefts p span {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ba933e;
+}
+#products .lefts h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #1a1a1a;
+  max-width: 590px;
+  margin-bottom: 30px;
+}
+#products .lefts button {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: none;
+  background-color: #1a1a1a;
+  padding: 11px 30px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+}
+#products .lefts button:hover {
+  background-color: #ba933e;
+}
+#products .right {
+  margin: 50px 0;
+  padding: 100px 40px 100px 40px;
+  height: 80%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#products .right p {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 15px;
+}
+#products .right p span {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ba933e;
+}
+#products .right h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #1a1a1a;
+  max-width: 590px;
+  margin-bottom: 30px;
+}
+#products .right button {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: none;
+  background-color: #1a1a1a;
+  padding: 11px 30px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+}
+#products .right button:hover {
+  background-color: #ba933e;
+}
+
+.modal-header {
+  border: none;
+  box-shadow: none;
+}
+
+.modal-footer {
+  border: none;
+  box-shadow: none;
+}
+
+.modal-body {
+  font-family: "Red Hat Display", sans-serif;
+}
+.modal-body .detail-img {
+  width: 100%;
+  height: 500px;
+}
+.modal-body .detail-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.modal-body .moree-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 75px;
+  height: 100px;
+}
+.modal-body .moree-product img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.modal-body .moree-product i {
+  font-size: 20px;
+}
+.modal-body .detail {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.modal-body .detail .price h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.modal-body .detail .price .old {
+  text-decoration: line-through;
+  font-weight: 400;
+  margin-right: 10px;
+  font-size: 20px;
+  line-height: 26px;
+  color: rgba(128, 128, 128, 0.395);
+}
+.modal-body .detail .price span {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ba933e;
+}
+.modal-body .detail p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.modal-body .detail .size {
+  margin-top: 30px;
+}
+.modal-body .detail .size h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+.modal-body .detail .size ul {
+  display: flex;
+  gap: 10px;
+}
+.modal-body .detail .size ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 35px;
+  min-width: 35px;
+  padding: 2px 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #606060;
+  border: 1px solid #e1e1e1;
+}
+.modal-body .detail .color h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+.modal-body .detail .color ul {
+  display: flex;
+  gap: 8px;
+}
+.modal-body .detail .color ul .white {
+  width: 26px;
+  height: 26px;
+  border: 2px solid #e1e1e1;
+  box-shadow: none;
+  border-radius: 50%;
+}
+.modal-body .detail .color ul .black {
+  width: 26px;
+  height: 26px;
+  border: 2px solid #000;
+  background-color: black;
+  box-shadow: none;
+  border-radius: 50%;
+}
+.modal-body .detail .payment {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.modal-body .detail .payment h5 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+.modal-body .detail .payment .btns {
+  display: flex;
+  gap: 8px;
+}
+.modal-body .detail .payment .btns ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 48px;
+  padding: 0.175rem 0.5rem;
+  width: 110px;
+  text-align: center;
+  border-radius: 0;
+  border: 2px solid #e1e1e1;
+}
+.modal-body .detail .payment .btns ul li {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #000;
+}
+.modal-body .detail .payment .btns button {
+  height: 48px;
+  width: 250px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  background-color: black;
+  color: white;
+}
+.modal-body .detail .payment ul {
+  display: flex;
+  gap: 30px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.304);
+  padding: 0px 0 40px;
+}
+.modal-body .detail .payment ul li {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #9d9d9d;
+}
+
+#more {
+  font-family: "Red Hat Display", sans-serif;
+  margin: 30px 0;
+  padding: 0px 30px 0px 30px;
+}
+#more .head-text {
+  margin-bottom: 40px;
+}
+#more .head-text h2 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #1a1a1a;
+}
+#more .box {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+}
+#more .box .box-img {
+  width: 95px;
+  height: 115px;
+}
+#more .box .box-img img {
+  width: 100%;
+  height: 100%;
+}
+#more .box .box-body {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#more .box .box-body h2 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #444;
+  transition: 0.1s ease-in-out;
+}
+#more .box .box-body h2:hover {
+  color: #ba933e;
+  cursor: pointer;
+}
+#more .box .box-body .price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#more .box .box-body .price .old {
+  text-decoration: line-through;
+  font-size: 14px;
+  font-weight: 400;
+  color: #999999;
+}
+#more .box .box-body .price span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ba933e;
+}
+#more .box .box-body .stars {
+  display: flex;
+}
+#more .box .box-body .stars i {
+  color: #ba933e;
+  font-size: 15px;
+}
+
+#form {
+  padding: 0px 30px 0px 30px;
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#form .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 120vh;
+  height: 50vh;
+  padding: 80px 30px 80px 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+#form .content .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+#form .content .top h1 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 24px;
+}
+#form .content .top p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #444444;
+}
+#form .content h3 {
+  font-size: 16px;
+  line-height: 28px;
+  color: #444444;
+}
+#form .inp-btn {
+  width: 600px;
+  display: flex;
+}
+#form .inp-btn input {
+  border-radius: 4px;
+  border: 2px solid #e3e3e3;
+  height: 45px;
+  padding: 0 15px;
+  color: #444;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: transparent;
+  width: 100%;
+}
+#form .inp-btn button {
+  background-color: #1a1a1a;
+  color: #fff;
+  text-transform: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  border-radius: 4px;
+  margin-left: 10px;
+  width: auto;
+  height: 45px;
+  padding: 0 35px;
+  transition: 0.2s ease-in-out;
+  border: none;
+}
+#form .inp-btn button:hover {
+  background-color: #ba933e;
+  border: none;
+}
+
+#service {
+  background-color: #f8f8f8;
+  padding: 80px 30px 80px 30px;
+  font-family: "Red Hat Display", sans-serif;
+}
+#service .service-card {
+  border-right: 2px solid rgba(0, 0, 0, 0.107);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+#service .service-card h2 {
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 28px;
+}
+#service .service-card h3 {
+  color: #444444;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+#service .service-card button {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+}
+#service .service-card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+#service .service-card-right h2 {
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 28px;
+}
+#service .service-card-right h3 {
+  color: #444444;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+#service .service-card-right button {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+}
+
+#blog {
+  margin: 50px 0;
+  padding: 0px 30px 0px 30px;
+  font-family: "Red Hat Display", sans-serif;
+}
+#blog .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+#blog .title h1 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #1a1a1a;
+}
+#blog .title p {
+  font-size: 16px;
+  line-height: 28px;
+}
+#blog .blog-card {
+  margin: 30px 0;
+}
+#blog .blog-card .blog-img {
+  overflow: hidden;
+}
+#blog .blog-card .blog-img:hover img {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+#blog .blog-card .blog-img img {
+  transition: 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#blog .blog-card .blog-body .category {
+  text-align: left;
+  margin: 15px 0;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 24px;
+  padding: 0px 11px 0px 11px;
+  border-radius: 3px;
+  background-color: #ba933e;
+  border: none;
+  color: #fff;
+}
+#blog .blog-card .blog-body ul {
+  display: flex;
+}
+#blog .blog-card .blog-body ul .first {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #444444;
+}
+#blog .blog-card .blog-body ul li {
+  color: #666666;
+  font-size: 14px;
+  line-height: 24px;
+}
+#blog .blog-card .blog-body h2 {
+  margin: 15px 0;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+  color: #1a1a1a;
+  transition: 0.2s ease-in-out;
+}
+#blog .blog-card .blog-body h2:hover {
+  color: #ba933e;
+  cursor: pointer;
+}
+#blog .blog-card .blog-body p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #444444;
+}
+#blog .blog-card .blog-body button {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 28px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #e5e5e5;
+  border-radius: 4px 4px 4px 4px;
+  padding: 9px 28px 9px 28px;
+  transition: 0.3s ease-in-out;
+}
+#blog .blog-card .blog-body button:hover {
+  background-color: #ba933e;
+  color: white;
+}
+#blog .logos {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  height: 150px;
+  border-top: 1px solid rgba(0, 0, 0, 0.182);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.182);
+}
+#blog .logos:hover img {
+  cursor: pointer;
+}
+
+#social {
+  margin: 50px 0;
+  padding: 0px 30px 0px 30px;
+  font-family: "Red Hat Display", sans-serif;
+}
+#social .social-head {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+#social .social-head h1 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #1a1a1a;
+}
+#social .social-head p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #1a1a1a;
+}
+#social .models {
+  margin: 20px 0;
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  height: 200px;
+}
+footer {
+  padding: 80px 30px 30px 30px;
+  background-color: #1a1a1a;
+  font-family: "Red Hat Display", sans-serif;
+}
+footer .left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .left .media h2 {
+  color: white;
+  font-size: 35px;
+  letter-spacing: 10px;
+  font-weight: 700;
+}
+footer .left .icons {
+  display: flex;
+  gap: 20px;
+}
+footer .left .icons i {
+  color: white;
+  font-size: 25px;
+  transition: 0.2s ease-in-out;
+}
+footer .left .icons i:hover {
+  cursor: pointer;
+  color: #ba933e;
+}
+footer .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+footer .menu h3 {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+footer .menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+footer .menu ul li {
+  color: #999999;
+  font-size: 14px;
+  line-height: 24px;
+  transition: 0.2s ease-in-out;
+}
+footer .menu ul li:hover {
+  cursor: pointer;
+  color: #ba933e;
+}
+footer .menu ul li i {
+  font-size: 25px;
+}
+footer .payments {
+  border-top: 1px solid rgba(153, 153, 153, 0.3764705882);
+  padding-top: 20px;
+}
+footer .payments ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .payments ul li {
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+}
+footer .payments ul li span {
+  color: #fff;
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */
