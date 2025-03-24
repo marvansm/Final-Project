@@ -1,5 +1,5 @@
 #more {
-    font-family: "Red Hat Display", sans-serif;
+    font-family: $main-font;
     margin: 30px 0;
     padding: 0px 30px 0px 30px;
     .head-text {
@@ -9,7 +9,7 @@
             font-size: 20px;
             font-weight: bold;
             line-height: 24px;
-            color: #1a1a1a;
+            color: $txt-color-light-black;
 
         }
     }
@@ -24,8 +24,7 @@
             height: 115px;
 
             img {
-                width: 100%;
-                height: 100%;
+              @extend %default-img;
             }
         }
 
@@ -39,11 +38,11 @@
                 font-size: 16px;
                 font-weight: 700;
                 line-height: 28px;
-                color: #444;
+                color: $txt-color-grey;
                 transition: .1s ease-in-out;
 
                 &:hover {
-                    color: #ba933e;
+                    color: $txt-color-green;
                     cursor: pointer;
                 }
             }
@@ -57,7 +56,7 @@
                     text-decoration: line-through;
                     font-size: 14px;
                     font-weight: 400;
-                    color: #999999;
+                    color: $txt-color-gray;
 
 
                 }
@@ -65,7 +64,7 @@
                 span {
                     font-size: 16px;
                     font-weight: 400;
-                    color: #ba933e;
+                    color: $txt-color-green;
                 }
             }
 
@@ -73,7 +72,7 @@
                 display: flex;
 
                 i {
-                    color: #ba933e;
+                    color: $txt-color-green;
                     font-size: 15px;
                 }
             }

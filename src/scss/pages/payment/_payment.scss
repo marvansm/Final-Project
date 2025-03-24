@@ -1,0 +1,341 @@
+#payment {
+    font-family: $main-font;
+    padding: 0px 30px 0px 30px;
+
+    .product-detail {
+        padding: 0 0 50px;
+
+        .detail-img {
+            width: 100%;
+            height: 570px;
+
+            img {
+                @extend %default-img;
+            }
+        }
+
+        .moree-product {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+            width: 100%;
+            height: 150px;
+
+            img {
+                @extend %default-img;
+            }
+
+            i {
+                font-size: 20px;
+            }
+        }
+
+        .detail {
+            .about {
+                h2 {
+                    text-transform: none;
+                    font-size: 32px;
+                    line-height: 1.1;
+                    font-weight: 700;
+                    color: $txt-color-light-black;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    margin-bottom: 0;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #868686;
+                    font-weight: 400;
+                }
+
+                .more {
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+                    padding: 15px 0;
+
+                    .stars {
+                        display: flex;
+                        border-right: 1px solid gray;
+                        padding-right: 8px;
+
+                        i {
+                            font-size: 18px;
+                            line-height: 14px;
+                            color: $txt-color-green;
+
+                        }
+                    }
+
+                    .comment {
+                        display: flex;
+                        gap: 4px;
+                        border-right: 1px solid gray;
+                        padding-right: 8px;
+
+                        h5 {
+                            font-size: 14px;
+                            line-height: 14px;
+                            color: $txt-color-grey2;
+                        }
+
+                        i {
+                            color: $txt-color-grey2;
+                        }
+
+                    }
+
+                    .your-comment {
+                        h6 {
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: $txt-color-grey2;
+                        }
+                    }
+                }
+
+                .time {
+                    display: flex;
+                    gap: 10px;
+                    padding: 10px 0;
+
+                    span {
+                        @include flexset (center, center, 0px);
+                        background-color: $rgb-color-white;
+                        padding: 10px;
+                        width: 50px;
+                        height: 50px;
+                        font-size: 17px;
+                        border: 1px solid rgba(128, 128, 128, 0.228);
+                    }
+                }
+
+                .price {
+                    padding: 15px 0;
+
+                    .old {
+                        text-decoration: line-through;
+                        font-weight: 400;
+                        margin-right: 10px;
+                        font-size: 20px;
+                        line-height: 26px;
+                        color: #ccc;
+                    }
+
+                    span {
+                        font-size: 20px;
+                        line-height: 26px;
+                        font-weight: 700;
+                        color: $txt-color-green;
+                    }
+
+
+                }
+            }
+
+            .size {
+                h3 {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 700;
+                    color: $txt-color-light-black;
+                    margin-bottom: 15px;
+                }
+
+                ul {
+                    display: flex;
+                    gap: 10px;
+                    margin-bottom: 15px;
+
+                    li {
+                        @include flexset (center, center, 0px);
+                        border: 1px solid $txt-color-white3;
+                        min-height: 35px;
+                        min-width: 35px;
+                        padding: 2px 8px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: #606060;
+                    }
+                }
+            }
+
+            .color {
+                h4 {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 700;
+                    color: $txt-color-light-black;
+                    margin-bottom: 15px;
+                }
+
+                ul {
+                    display: flex;
+                    gap: 8px;
+                    margin-bottom: 15px;
+
+                    .black {
+                        width: 26px;
+                        height: 26px;
+                        border: 2px solid $txt-color-white3;
+                        box-shadow: none;
+                        border-radius: 50%;
+                        background-color: $bg-color-light-purple;
+                    }
+
+                    .white {
+                        width: 26px;
+                        height: 26px;
+                        border: 2px solid $txt-color-white3;
+                        box-shadow: none;
+                        border-radius: $full-rounded;
+                        background-color: $txt-color-white;
+                    }
+                }
+            }
+
+            .pay {
+                h5 {
+                    margin-bottom: 10px;
+                    display: block;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 700;
+                    color: $txt-color-light-black;
+                }
+
+                .btns {
+                    display: flex;
+                    gap: 9px;
+
+                    ul {
+                        @include flexset (center, space-between, 0px);
+                        background-color: $bg-color-white;
+                        height: 48px;
+                        padding: .175rem .5rem;
+                        width: 110px;
+                        text-align: center;
+                        border-radius: 0;
+                        border: 2px solid $txt-color-white3;
+                        font-size: 18px;
+                        line-height: 24px;
+                        font-weight: 500;
+                        color: $txt-color-black;
+                    }
+
+                    button {
+                        height: 48px;
+                        width: 40%;
+                        padding: 0 15px;
+                        @include flexset (center, center, 0px);
+                        font-size: 15px;
+                        font-weight: 700;
+                        background-color: $bg-color-black;
+                        color: $txt-color-white;
+                        border-radius: 4px;
+                        transition: .2s ease-in-out;
+                        border: none;
+
+                        &:hover {
+                            background-color: $bg-color-green;
+                        }
+                    }
+                }
+            }
+
+            .more-el {
+                padding: 15px 0 30px;
+
+                border-bottom: 1px solid gray;
+
+
+                ul {
+                    display: flex;
+                    gap: 12px;
+                }
+
+                li {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    color: $txt-color-pink;
+                }
+            }
+
+            .more-info {
+                margin-top: 15px;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    li {
+                        display: flex;
+                        gap: 20px;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 20px;
+                        margin: 0 20px 0 0;
+                        color: $txt-color-light-black;
+
+                        .first {
+                            color: $txt-color-green;
+                            font-size: 14px;
+                            line-height: 20px;
+                            font-weight: 400;
+                        }
+
+                        .norm {
+                            font-size: 14px;
+                            line-height: 20px;
+                            font-weight: 400;
+                            color: $txt-color-grey2;
+                        }
+
+                        .icon {
+                            display: flex;
+                            gap: 10px;
+
+
+
+                            .fb {
+                                i {
+                                    color: $rgb-color-purple;
+                                    font-size: 18px;
+                                }
+                            }
+
+                            .twitter {
+                                i {
+                                    color: $txt-color-blue;
+                                    font-size: 18px;
+                                }
+                            }
+
+                            .pinterest {
+                                i {
+                                    color: $txt-color-red;
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+
+
+    }
+
+
+
+
+
+}

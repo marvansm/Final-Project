@@ -1,7 +1,7 @@
 footer {
     padding: 80px 30px 30px 30px;
-    background-color: #1a1a1a;
-    font-family: "Red Hat Display", sans-serif;
+    background-color: $bg-color-light-black;
+    font-family: $main-font;
 
     .left {
         display: flex;
@@ -10,7 +10,7 @@ footer {
 
         .media {
             h2 {
-                color: white;
+                color: $txt-color-white;
                 font-size: 35px;
                 letter-spacing: 10px;
                 font-weight: 700;
@@ -22,13 +22,13 @@ footer {
             gap: 20px;
 
             i {
-                color: white;
+                color: $txt-color-white;
                 font-size: 25px;
                 transition: .2s ease-in-out;
 
                 &:hover {
                     cursor: pointer;
-                    color: #ba933e;
+                    color: $txt-color-green;
                 }
             }
         }
@@ -41,7 +41,7 @@ footer {
         margin-bottom: 50px;
 
         h3 {
-            color: white;
+            color: $txt-color-white;
             font-size: 16px;
             font-weight: 700;
             line-height: 24px;
@@ -54,14 +54,14 @@ footer {
             gap: 7px;
 
             li {
-                color: #999999;
+                color: $txt-color-gray;
                 font-size: 14px;
                 line-height: 24px;
                 transition: .2s ease-in-out;
 
                 &:hover {
                     cursor: pointer;
-                    color: #ba933e;
+                    color: $txt-color-green;
                 }
 
                 i {
@@ -72,20 +72,19 @@ footer {
     }
 
     .payments {
-        border-top: 1px solid #99999960;
-        padding-top: 20px ;
+        border-top: 1px solid $txt-color-dark-gray;
+        padding-top: 20px;
+
         ul {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+          @include flexset (center,space-between,0px);
 
             li {
                 font-size: 14px;
                 line-height: 24px;
-                color: #999999;
+                color: $txt-color-gray;
 
                 span {
-                    color: #fff;
+                    color: $txt-color-white;
                     font-weight: 700;
                 }
             }

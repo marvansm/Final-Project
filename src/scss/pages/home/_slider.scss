@@ -1,6 +1,6 @@
 #slide {
     padding: 0px 30px 0px 30px;
-    font-family: "Red Hat Display", sans-serif;
+    font-family: $main-font;
 
     .carousel-item {
         height: 830px;
@@ -19,14 +19,14 @@
                 font-size: 20px;
                 line-height: 24px;
                 font-weight: 700;
-                color: #444;
+                color: $txt-color-grey;
                 margin-bottom: 15px;
 
                 span {
                     font-size: 20px;
                     line-height: 24px;
                     font-weight: 700;
-                    color: #ba933e;
+                    color: $txt-color-green;
                 }
             }
 
@@ -34,7 +34,7 @@
                 font-size: 40px;
                 line-height: 1.2;
                 font-weight: 700;
-                color: #1a1a1a;
+                color: $txt-color-light-black;
                 max-width: 590px;
                 margin-bottom: 30px;
             }
@@ -43,16 +43,16 @@
                 font-size: 16px;
                 line-height: 28px;
                 font-weight: 700;
-                color: #fff;
+                color: $txt-color-white;
                 text-transform: none;
-                background-color: #1a1a1a;
+                background-color: $txt-color-light-black;
                 padding: 11px 30px;
                 transition: .2s ease-in-out;
                 border: none;
                 border-radius: 6px;
 
                 &:hover {
-                    background-color: #ba933e;
+                    background-color: $bg-color-green;
 
                 }
             }
@@ -82,7 +82,7 @@
                 font-size: 24px;
                 font-weight: bold;
                 line-height: 28px;
-                color: #1a1a1a;
+                color: $txt-color-light-black;
             }
 
             h3 {
@@ -93,7 +93,7 @@
             h4 {
                 font-size: 14px;
                 font-weight: bold;
-                color: #ba933e;
+                color: $txt-color-green;
                 text-decoration: underline;
             }
         }
@@ -121,7 +121,7 @@
                 font-size: 24px;
                 font-weight: bold;
                 line-height: 28px;
-                color: #1a1a1a;
+                color: $txt-color-light-black;
             }
 
             h3 {
@@ -132,7 +132,7 @@
             h4 {
                 font-size: 14px;
                 font-weight: bold;
-                color: #ba933e;
+                color: $txt-color-green;
                 text-decoration: underline;
             }
         }
