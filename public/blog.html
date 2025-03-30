@@ -86,14 +86,40 @@
 
                         <div class="category">
                             <h2>Home</h2>
-                            <ul>
-                                <li>Furniture<i class="ri-arrow-down-s-line"></i></li>
-                                <li>Chairs<i class="ri-arrow-down-s-line"></i></li>
-                                <li>Sofas<i class="ri-arrow-down-s-line"></i></li>
-                                <li>Construction</li>
-                            </ul>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">Furniture <i
+                                            class="ri-arrow-down-s-line"></i></button>
+                                    <div class="accordion-content">
+                                        <ul>
+                                            <li>Lighting Lamp</li>
+                                            <li>Decor Art</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">Chairs <i
+                                            class="ri-arrow-down-s-line"></i></button>
+                                    <div class="accordion-content">
+                                        <ul>
+                                            <li>Lighting Lamp</li>
+                                            <li>Decor Art</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">Sofas <i class="ri-arrow-down-s-line"></i></button>
+                                    <div class="accordion-content">
+                                        <ul>
+                                            <li>Lighting Lamp</li>
+                                            <li>Decor Art</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
                             <hr>
-                          
+
                         </div>
                         <div class="search">
                             <div class="position">
@@ -110,9 +136,19 @@
                         </div>
                         <div class="blog-ctgry">
                             <h2>Blog Categories</h2>
-                            <ul>
-                                <li>Category 1<i class="ri-arrow-down-s-line"></i></li>
-                            </ul>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">Category<i
+                                            class="ri-arrow-down-s-line"></i></button>
+                                    <div class="accordion-content">
+                                        <ul>
+                                            <li>Category 1</li>
+                                            <li>Category 2</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                         
                             <hr>
                         </div>
                         <div class="side-shop">
@@ -472,6 +508,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+
+    <script>
+        document.querySelectorAll('.accordion-header').forEach(button => {
+            button.addEventListener('click', () => {
+                button.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 
 </html>

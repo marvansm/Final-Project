@@ -1217,37 +1217,6 @@ footer .payments ul li span {
   background-color: #ba933e;
   color: #fff;
 }
-#product-detail .category {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-#product-detail .category ul {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-#product-detail .category ul li {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 500;
-  color: #666;
-  transition: 0.2s ease-in-out;
-}
-#product-detail .category ul li:hover {
-  color: #ba933e;
-  cursor: pointer;
-}
-#product-detail .category ul li i {
-  font-size: 20px;
-  transition: 0.2s ease-in-out;
-}
-#product-detail .category ul li i:hover {
-  color: #ba933e;
-  cursor: pointer;
-}
 #product-detail .search {
   display: flex;
   flex-direction: column;
@@ -1295,7 +1264,7 @@ footer .payments ul li span {
 #product-detail .blog-ctgry {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 7px;
 }
 #product-detail .blog-ctgry ul li {
   display: flex;
@@ -1442,6 +1411,47 @@ footer .payments ul li span {
 #product-detail .btns ul li button:hover {
   border: 2px solid #000;
 }
+#product-detail .accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 20px;
+}
+#product-detail .accordion-item {
+  margin-bottom: 10px;
+  border: none;
+}
+#product-detail .accordion-item i {
+  font-size: 20px;
+}
+#product-detail .accordion-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #666;
+}
+#product-detail .accordion-header:hover {
+  color: #ba933e;
+}
+#product-detail .accordion-content {
+  display: none;
+  color: #666;
+}
+#product-detail .accordion-content:hover {
+  color: #ba933e;
+}
+#product-detail .active + .accordion-content {
+  display: block;
+}
 
 #info {
   font-family: "Red Hat Display", sans-serif;
@@ -1543,36 +1553,46 @@ footer .payments ul li span {
   border-color: #d0e9c6;
   color: #3c763d;
 }
-#info .category {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+#info .accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 20px;
 }
-#info .category ul {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+#info .accordion-item {
+  margin-bottom: 10px;
+  border: none;
 }
-#info .category ul li {
+#info .accordion-item i {
+  font-size: 20px;
+}
+#info .accordion-header {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  border: none;
+  background-color: transparent;
   font-size: 14px;
   line-height: 24px;
   font-weight: 500;
   color: #666;
-  transition: 0.2s ease-in-out;
 }
-#info .category ul li:hover {
+#info .accordion-header:hover {
   color: #ba933e;
-  cursor: pointer;
 }
-#info .category ul li i {
-  font-size: 20px;
-  transition: 0.2s ease-in-out;
+#info .accordion-content {
+  display: none;
+  color: #666;
 }
-#info .category ul li i:hover {
+#info .accordion-content:hover {
   color: #ba933e;
-  cursor: pointer;
+}
+#info .active + .accordion-content {
+  display: block;
 }
 #info .search {
   display: flex;

@@ -128,41 +128,54 @@
         }
     }
 
-    .category {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
+    .accordion {
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+        margin-top: 20px;
+    }
 
-        ul {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
+    .accordion-item {
+        margin-bottom: 10px;
+        border: none;
 
-            li {
-                display: flex;
-                justify-content: space-between;
-                font-size: 14px;
-                line-height: 24px;
-                font-weight: 500;
-                color: #666;
-                transition: .2s ease-in-out;
-
-                &:hover {
-                    color: $txt-color-green;
-                    cursor: pointer;
-                }
-
-                i {
-                    font-size: 20px;
-                    transition: .2s ease-in-out;
-
-                    &:hover {
-                        color: $txt-color-green;
-                        cursor: pointer;
-                    }
-                }
-            }
+        i {
+            font-size: 20px;
         }
+    }
+
+    .accordion-header {
+
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        border: none;
+        width: 100%;
+        text-align: left;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #666;
+
+        &:hover {
+            color: $txt-color-green;
+        }
+    }
+
+    .accordion-content {
+        display: none;
+        color: #666;
+
+        &:hover {
+            color: $txt-color-green;
+        }
+    }
+
+    .active+.accordion-content {
+        display: block;
     }
 
     .search {
@@ -400,7 +413,7 @@
 
 
         .labels {
-            @include flexset (center,center,10px);
+            @include flexset (center, center, 10px);
             flex-direction: column;
             width: 70%;
             margin-right: 20px;

@@ -113,42 +113,7 @@
         }
     }
 
-    .category {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
 
-        ul {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-
-            li {
-                display: flex;
-                justify-content: space-between;
-                font-size: 14px;
-                line-height: 24px;
-                font-weight: 500;
-                color: $txt-color-grey2;
-                transition: .2s ease-in-out;
-
-                &:hover {
-                    color: $txt-color-green;
-                    cursor: pointer;
-                }
-
-                i {
-                    font-size: 20px;
-                    transition: .2s ease-in-out;
-
-                    &:hover {
-                        color: $txt-color-green;
-                        cursor: pointer;
-                    }
-                }
-            }
-        }
-    }
 
     .search {
         display: flex;
@@ -207,7 +172,7 @@
     .blog-ctgry {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 7px;
 
         ul {
             li {
@@ -393,5 +358,55 @@
                 }
             }
         }
+    }
+
+    .accordion {
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .accordion-item {
+        margin-bottom: 10px;
+        border: none;
+
+        i {
+            font-size: 20px;
+        }
+    }
+
+    .accordion-header {
+
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        border: none;
+        width: 100%;
+        text-align: left;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #666;
+
+        &:hover {
+            color: $txt-color-green;
+        }
+    }
+
+    .accordion-content {
+        display: none;
+        color: #666;
+
+        &:hover {
+            color: $txt-color-green;
+        }
+    }
+
+    .active+.accordion-content {
+        display: block;
     }
 }
