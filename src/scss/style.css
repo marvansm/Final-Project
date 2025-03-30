@@ -60,7 +60,7 @@ a {
   color: inherit;
 }
 
-#product-category .category-box .img-box img, #product-category .category-img img, #product-category .shop-box .shop-img img, #our-team .boxes .box-img img, #about-us .cards .cards-img img, #about-us .right img, #same-category .modal-body .moree-product img, #same-category .modal-body .detail-img img, #same-category .cards .cards-img img, #payment .product-detail .moree-product img, #payment .product-detail .detail-img img, #info .shop-box .shop-img img, #info .side-shop .product-side .side-img img, #product-detail .shop-box .shop-img img, #product-detail .side-shop .product-side .side-img img, #product-detail .blog-card .blog-img img, #social .models img, #blog .blog-card .blog-img img, #more .box .box-img img, .modal-body .moree-product img, .modal-body .detail-img img, #products .cards .cards-img img, #slide .box-img-down img, #slide .box-img img, #slide .carousel-item img, header nav .menu .tabmenu .product-box .box .box-img img {
+#product-category .category-box .img-box img, #product-category .category-img img, #product-category .shop-box .shop-img img, #our-team .boxes .box-img img, #about-us .cards .cards-img img, #about-us .right img, #same-category .modal-body .moree-product img, #same-category .modal-body .detail-img img, #same-category .cards .cards-img img, #payment .product-detail .moree-product img, #payment .product-detail .detail-img img, #info .shop-box .shop-img img, #info .side-shop .product-side .side-img img, #product-detail .shop-box .shop-img img, #product-detail .side-shop .product-side .side-img img, #product-detail .blog-card .blog-img img, #social .models img, #blog .blog-card .blog-img img, #more .box .box-img img, .modal-body .moree-product img, .modal-body .detail-img img, #products .cards .cards-img img, #slide .box-img-down img, #slide .box-img img, #slide .carousel-item img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -81,6 +81,7 @@ header nav {
   align-items: center;
   justify-content: space-between;
   gap: 0px;
+  position: relative;
 }
 header nav .menu ul {
   display: flex;
@@ -108,51 +109,25 @@ header nav .menu ul li a {
 header nav .menu ul .dropdown {
   position: relative;
 }
-header nav .menu .tabmenu {
-  padding: 30px 20px;
-  background-color: #ffffff;
-  width: 100%;
-  display: flex;
+header nav .menu ul .dropdown:hover .page-menu {
+  display: block;
+}
+header nav .menu .page-menu {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   position: absolute;
-  top: 74px;
-  right: 0px;
-  opacity: 0;
-  z-index: 1;
-  gap: 50px;
+  width: 271px;
+  padding: 23px 28px;
+  height: 273px;
+  top: 30px;
+  left: 0px;
+  background-color: white;
+  display: none;
 }
-header nav .menu .tabmenu .first {
-  font-weight: bold;
-  font-size: 16px;
-}
-header nav .menu .tabmenu li {
-  font-size: 14px;
-}
-header nav .menu .tabmenu .start ul {
+header nav .menu .page-menu ul {
   display: flex;
   flex-direction: column;
-}
-header nav .menu .tabmenu .mid ul {
-  display: flex;
-  flex-direction: column;
-}
-header nav .menu .tabmenu .product-box {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-header nav .menu .tabmenu .product-box .box {
-  display: flex;
-  gap: 10px;
-}
-header nav .menu .tabmenu .product-box .box .box-img {
-  width: 100px;
-  height: 100px;
-}
-header nav .menu .tabmenu .product-box .box .box-body {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  z-index: 9999;
+  gap: 2px;
 }
 header nav .register {
   display: flex;
@@ -180,8 +155,11 @@ header nav .register .left ul li:hover i {
   cursor: pointer;
 }
 header nav .register .left ul li i {
-  font-size: 18px;
+  font-size: 21px;
   color: #1a1a1a;
+}
+header nav .register .icons {
+  position: relative;
 }
 header nav .register .icons ul {
   display: flex;
@@ -189,13 +167,23 @@ header nav .register .icons ul {
   gap: 20px;
 }
 header nav .register .icons ul li i {
-  font-size: 18px;
+  font-size: 22px;
   color: #1a1a1a;
   transition: 0.2s ease-in-out;
 }
 header nav .register .icons ul li i:hover {
   color: rgb(140, 205, 41);
   cursor: pointer;
+}
+header nav .register .icons .pos-num {
+  position: absolute;
+  top: -5px;
+  left: 22px;
+}
+header nav .register .icons .pos-num2 {
+  position: absolute;
+  top: -5px;
+  left: 64px;
 }
 
 #slide {
@@ -1114,6 +1102,7 @@ footer .payments ul li span {
   height: 55vh;
   background-repeat: no-repeat;
   background-size: contain;
+  z-index: -1;
 }
 #about-banner .banner ul {
   position: absolute;
@@ -2655,22 +2644,24 @@ footer .payments ul li span {
   cursor: pointer;
 }
 .positionn:hover .tasks {
-  opacity: 1;
+  display: block;
 }
 .positionn i {
   font-size: 20px;
   color: #fff;
 }
 .positionn .tasks {
+  border-radius: 5px;
   font-family: "Red Hat Display", sans-serif;
   position: fixed;
   right: 10px;
   padding: 20px;
-  top: 250px;
+  top: 240px;
   z-index: 1;
-  background-color: transparent;
-  opacity: 0;
-  background-color: #000;
+  background-color: white;
+  opacity: 0.8;
+  border: 1px solid rgba(128, 128, 128, 0.253);
+  display: none;
 }
 .positionn .tasks ul {
   display: flex;
@@ -2683,7 +2674,7 @@ footer .payments ul li span {
   font-weight: 700;
 }
 .positionn .tasks ul li {
-  color: #fff;
+  color: #000;
   transition: 0.2s ease-in-out;
 }
 .positionn .tasks ul li :hover {

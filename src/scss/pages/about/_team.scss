@@ -90,7 +90,7 @@
         cursor: pointer;
 
         .tasks {
-            opacity: 1;
+            display: block;
         }
     }
 
@@ -100,17 +100,17 @@
     }
 
     .tasks {
-
+        border-radius: 5px;
         font-family: $main-font;
         position: fixed;
         right: 10px;
         padding: 20px;
-        top: 250px;
+        top: 240px;
         z-index: 1;
-        background-color: transparent;
-
-        opacity: 0;
-        background-color: $bg-color-black;
+        background-color: white;
+        opacity: 0.8;
+        border: 1px solid rgba(128, 128, 128, 0.253);
+        display: none;
 
         ul {
             display: flex;
@@ -124,7 +124,7 @@
             }
 
             li {
-                color: $txt-color-white;
+                color: $txt-color-black;
                 transition: .2s ease-in-out;
 
                 :hover {

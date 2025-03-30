@@ -3,10 +3,12 @@ header {
     font-family: $main-font;
 
     nav {
-        @include flexset (center,space-between,0px);
-       
+        @include flexset (center, space-between, 0px);
+        position: relative;
 
         .menu {
+
+
             ul {
                 display: flex;
                 gap: 20px;
@@ -36,76 +38,39 @@ header {
 
                 .dropdown {
                     position: relative;
+                    &:hover {
+                        .page-menu {
+                            display: block;
+                        }
+                    }
 
                 }
+
             }
 
-            .tabmenu {
-                padding: 30px 20px;
-                background-color: $bg-color-ice;
-                width: 100%;
-                display: flex;
+            .page-menu {
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                 position: absolute;
-                top: 74px;
-                right: 0px;
-                opacity: 0;
-                z-index: 1;
-                gap: 50px;
+                width: 271px;
+                padding: 23px 28px;
+                height: 273px;
+                top: 30px;
+                left: 0px;
+                background-color: white;
+                display: none;
 
-                .first {
-                    font-weight: bold;
-                    font-size: 16px;
-                }
-
-                li {
-                    font-size: 14px;
-                }
-
-                .start {
-                    ul {
-                        display: flex;
-                        flex-direction: column;
-                    }
-                }
-
-                .mid {
-                    ul {
-                        display: flex;
-                        flex-direction: column;
-                    }
-                }
-
-                .product-box {
+                ul {
                     display: flex;
                     flex-direction: column;
-                    gap: 15px;
-
-                    .box {
-                        display: flex;
-                        gap: 10px;
-
-                        .box-img {
-                            width: 100px;
-                            height: 100px;
-
-                            img {
-                               @extend %default-img;
-                            }
-                        }
-
-                        .box-body {
-                            margin-top: 10px;
-                            display: flex;
-                            flex-direction: column;
-                            gap: 10px;
-                        }
-                    }
-
+                    z-index: 9999;
+                    gap: 2px;
 
                 }
-
             }
+
+
         }
+
 
         .register {
             display: flex;
@@ -138,7 +103,8 @@ header {
                         }
 
                         i {
-                            font-size: 18px;
+                            font-size: 21px;
+
                             color: $txt-color-light-black;
                         }
                     }
@@ -146,6 +112,8 @@ header {
             }
 
             .icons {
+                position: relative;
+
                 ul {
                     display: flex;
                     align-items: center;
@@ -153,7 +121,7 @@ header {
 
                     li {
                         i {
-                            font-size: 18px;
+                            font-size: 22px;
                             color: $txt-color-light-black;
                             transition: .2s ease-in-out;
 
@@ -164,11 +132,24 @@ header {
                         }
                     }
                 }
+
+                .pos-num {
+                    position: absolute;
+                    top: -5px;
+                    left: 22px;
+                }
+
+                .pos-num2 {
+                    position: absolute;
+                    top: -5px;
+                    left: 64px;
+                }
             }
         }
 
 
     }
+
 
 
 }
